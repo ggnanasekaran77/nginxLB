@@ -1,0 +1,9 @@
+#!/usr/bin/env groovy
+
+node {
+    wrap([$class: 'AnsiColorBuildWrapper', colorMapName: "xterm"]) {
+        ansiblePlaybook( 
+            playbook: 'main.yml',
+            colorized: true) 
+    }
+}

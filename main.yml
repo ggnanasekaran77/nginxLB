@@ -1,0 +1,8 @@
+--- # Jenkins Main Playbook
+
+- hosts: "nginxlb"
+
+  tasks:
+
+  - name: execute nginxLB.yml
+    include_tasks: nginxLB.yml
