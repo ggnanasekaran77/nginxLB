@@ -15,8 +15,6 @@
     image: ggnanasekaran77/nginxlb
     recreate: yes
     pull: yes
-    volumes:
-      - /opt/app/ansible/python27
     ports:
       - 80:80
       - 443:443
